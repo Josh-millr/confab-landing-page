@@ -1,0 +1,103 @@
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+    colors: {
+      white: "#FFFFFF",
+      black: "#000000",
+      stormy: "323334",
+      smoke: "#4E4F51",
+      cloudy: "#F5F4F3",
+      timber: "#BBA28B",
+      oyster: "#E1D6CC",
+      linen: "#F8F4E7",
+      mango: "#F4BB44",
+      sunny: "#FFD6AD",
+      crayola: "#FB554C",
+      coral: "#FDB3AF",
+      misty: "#FDE9E3",
+      opal: "#8DBAB5",
+      seafoam: "#CCE0DE",
+      sage: "#EEF1EC",
+    },
+    fontFamily: {
+      heading: ["Koulen"],
+      body: ["GeneralSans-Variable"],
+      caption: ["GeneralSans-Variable"],
+    },
+    fontSize: {
+      // Headings
+
+      h1: [
+        "96px",
+        {
+          letterSpacing: "-2px",
+          lineHeight: "90px",
+        },
+      ],
+      h2: [
+        "64px",
+        {
+          letterSpacing: "-2px",
+          lineHeight: "60px",
+        },
+      ],
+      h3: [
+        "40px",
+        {
+          letterSpacing: "-2px",
+          lineHeight: "42px",
+        },
+      ],
+      h4: [
+        "32px",
+        {
+          letterSpacing: "-2px",
+          lineHeight: "32px",
+        },
+      ],
+      h5: [
+        "20px",
+        {
+          letterSpacing: "-2px",
+          lineHeight: "18px",
+        },
+      ],
+
+      // Body
+
+      "body-lg": [
+        "18px",
+        {
+          letterSpacing: "0px",
+          lineHeight: "24px",
+        },
+      ],
+      "body-md": [
+        "16px",
+        {
+          letterSpacing: "0px",
+          lineHeight: "24px",
+        },
+      ],
+      "body-sm": [
+        "14px",
+        {
+          letterSpacing: "0px",
+          lineHeight: "24px",
+        },
+      ],
+
+      // Caption
+
+      caption: [
+        "12px",
+        {
+          letterSpacing: "0px",
+          lineHeight: "16px",
+        },
+      ],
+    },
+  },
+  plugins: [],
+};

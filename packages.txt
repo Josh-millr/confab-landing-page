@@ -1,0 +1,10 @@
+DEVELOPMENT_DEPENDENCIES
+* Tailwindcss
+* Tailwindcss prettier plugin
+* Tailwind Config Viewer
+
+PACKAGE_DEPENDENCIES
+* Redux Toolkit & React-Redux
+* Axios
+* React Icons
+* React Spinner
