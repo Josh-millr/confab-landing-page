@@ -21,6 +21,7 @@ module.exports = {
       sage: "#EEF1EC",
     },
     fontFamily: {
+      // TODO: Add fallback fonts
       heading: ["Koulen"],
       body: ["GeneralSans-Variable"],
       caption: ["GeneralSans-Variable"],

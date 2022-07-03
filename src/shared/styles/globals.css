@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("Koulen[font-dec].css");
 @import url("general-sans[font-dec].css");
 @import url("satoshi[font-dec].css");
