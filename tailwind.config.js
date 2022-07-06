@@ -21,8 +21,16 @@ module.exports = {
       sage: "#EEF1EC",
     },
     fontFamily: {
-      // TODO: Add fallback fonts
-      heading: ["Koulen"],
+      heading: [
+        "Koulen",
+        "Arial",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "San Francisco",
+        "Roboto",
+        "Helvetica Neue",
+        "sans-serif",
+      ],
       body: ["GeneralSans-Variable"],
       caption: ["GeneralSans-Variable"],
     },
