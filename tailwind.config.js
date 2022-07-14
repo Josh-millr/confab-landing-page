@@ -34,6 +34,7 @@ module.exports = {
       body: ["GeneralSans-Variable"],
       caption: ["GeneralSans-Variable"],
       btn: ["GeneralSans-Variable"],
+      link: ["GeneralSans-Variable"],
     },
     fontSize: {
       // Headings
@@ -117,12 +118,22 @@ module.exports = {
           lineHeight: "24px",
         },
       ],
+      // Links
+      "link-md": [
+        "16px",
+        {
+          letterSpacing: "0px",
+          lineHeight: "24px",
+        },
+      ],
     },
     spacing: {
-      "pageMargin-01": "24px",
+      "pageMargin-sm": "24px",
+      "pageMargin-md": "40px",
+      "pageMargin-lg": "80px",
     },
     width: {
-      "w-full": "100%",
+      "full": "100%",
       // Mobile / Tablet
       "1/6": "16.666667%",
       "2/6": "33.333333%",
