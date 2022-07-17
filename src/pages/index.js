@@ -1,5 +1,6 @@
 import { NavBar } from "@components/sections/NavBar";
 import { Hero } from "@components/sections/Hero";
+import { Testimonials } from "@components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -8,7 +9,9 @@ export default function Home() {
         <NavBar />
         <Hero />
       </header>
-      <main>{/* Web page main content goes here... */}</main>
+      <main>
+        <Testimonials />
+      </main>
     </>
   );
 }
