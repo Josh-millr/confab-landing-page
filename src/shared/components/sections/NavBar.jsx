@@ -4,7 +4,6 @@ import Link from "next/link";
 import { RiMenu3Line, RiAddLine } from "react-icons/ri";
 import { Button } from "@components/index";
 
-
 export const NavBar = () => {
   let [displayNav, setDisplayNav] = useState(false);
   let [currentWindowWidth, setCurrentWidowWidth] = useState(0);
@@ -16,7 +15,10 @@ export const NavBar = () => {
   }, []);
 
   return (
-    <nav className="flex w-full px-pageMargin-sm py-[42px] sm:px-pageMargin-md sm:py-[32px] md:gap-x-[22px] lg:px-pageMargin-lg">
+    <nav
+      role="navigation"
+      className="flex w-full px-pageMargin-sm py-[42px] sm:px-pageMargin-md sm:py-[32px] md:gap-x-[22px] lg:px-pageMargin-lg"
+    >
       <div className="my-auto w-2/6 items-center sm:w-1/6">
         <Image
           src="/confab-logo.png"
