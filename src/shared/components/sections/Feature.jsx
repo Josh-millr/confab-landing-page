@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Button } from "@components/index";
+import { RiCompassLine } from "react-icons/ri";
 
 export const Feature = () => {
   let featureItems = [
@@ -25,9 +27,9 @@ export const Feature = () => {
     },
   ];
 
-  let featList = featureItems.map(({ img, heading, paragraph, id }) => {
+  let featureList = featureItems.map(({ img, heading, paragraph, id }) => {
     return (
-      <div key={id} className="grid gap-y-[16px]">
+      <div key={id} className="grid gap-y-[16px] md:pl-[40px] lg:pl-[0]">
         <div>
           <Image
             className=""
@@ -39,7 +41,7 @@ export const Feature = () => {
         </div>
         <div className="grid gap-y-[8px]">
           <h1 className="font-heading text-h4 text-black">{heading}</h1>
-          <p className="font-body text-body-sm font-medium text-smoke">
+          <p className="max-w-[320px] font-body text-body-sm font-medium text-smoke">
             {paragraph.paraStart}{" "}
             <span className="text-crayola">{paragraph.paraHighlight}</span>{" "}
             {paragraph.paraEnd}
@@ -50,15 +52,36 @@ export const Feature = () => {
   });
   return (
     <section>
-      <div className="grid py-[80px] px-pageMargin-sm sm:m-pageMargin-md md:gap-y-[40px] lg:m-pageMargin-lg lg:gap-y-[48px]">
+      <div className="relative grid py-[80px] px-pageMargin-sm sm:px-pageMargin-md md:gap-y-[40px] lg:gap-y-[48px] lg:px-pageMargin-lg">
         {/* column 1 */}
-        <div className=""></div>
+        <div className={"relative hidden h-[650px] md:block"}>
+          <Image
+            src="/illustrations/Live-streaming-featured.svg"
+            alt="responsive Image of live streaming platform"
+            layout="fill"
+          />
+        </div>
         {/* column 2 */}
-        <div className="grid grid-cols-1 gap-y-[32px] sm:grid-cols-2 lg:grid-cols-3">
-          {featList}
-          <div className=""></div>
+        <div className="grid grid-cols-1 grid-rows-1 gap-y-[32px] sm:grid-cols-2 sm:grid-rows-2 md:grid-rows-1 lg:grid-cols-3 lg:gap-x-[40px]">
+          {featureList}
+          <div className="grid gap-y-[32px] rounded-[24px] bg-cloudy px-[16px] py-[40px] sm:col-[1_/_span_4] sm:px-[32px] lg:col-auto">
+            <p className="max-w-[320px] font-body text-body-md font-medium text-smoke">
+              Virtual meetings, and conferences, anyone can share, join or host
+              (virtual events).
+            </p>
+            <div className="flex gap-x-[8px]">
+              <Button label="Get Started" type="primary" size="md" />
+              <Button
+                label="Browse"
+                type="stroke"
+                size="md"
+                icon={RiCompassLine}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
+//
