@@ -67,7 +67,38 @@ export const Feature = () => {
   });
   return (
     <section>
-
+      <div className="relative grid py-[80px] px-pageMargin-sm sm:px-pageMargin-md md:gap-y-[40px] lg:gap-y-[48px] lg:px-pageMargin-lg">
+        {/* column 1 */}
+        <div
+          style={{ height: containerHeight }}
+          className="relative hidden md:block"
+        >
+          <Image
+            src="/illustrations/Live-streaming-featured.svg"
+            alt="responsive Image of live streaming platform"
+            layout="fill"
+          />
+        </div>
+        {/* column 2 */}
+        <div className="grid grid-cols-1 grid-rows-1 gap-y-[32px] sm:grid-cols-2 sm:grid-rows-2 md:grid-rows-1 lg:grid-cols-3 lg:gap-x-[40px]">
+          {featureList}
+          <div className="grid gap-y-[32px] rounded-[24px] bg-cloudy px-[16px] py-[40px] sm:col-[1_/_span_4] sm:px-[32px] lg:col-auto">
+            <p className="max-w-[320px] font-body text-body-md font-medium text-smoke">
+              Virtual meetings, and conferences, anyone can share, join or host
+              (virtual events).
+            </p>
+            <div className="flex gap-x-[8px]">
+              <Button label="Get Started" type="primary" size="md" />
+              <Button
+                label="Browse"
+                type="stroke"
+                size="md"
+                icon={RiCompassLine}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
