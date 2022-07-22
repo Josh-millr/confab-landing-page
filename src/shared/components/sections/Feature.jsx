@@ -4,6 +4,21 @@ import { Button } from "@components/index";
 import { RiCompassLine } from "react-icons/ri";
 
 export const Feature = () => {
+  let [containerHeight, setContainerHeight] = useState("0px");
+
+  useEffect(() => {
+    // Image Dimention
+    const IMAGE_HEIGHT = 793;
+    const IMAGE_WIDTH = 396;
+
+    let windowPadding = window.innerWidth <= 768 ? 80 : 160;
+    let windowWidth = window.innerWidth - windowPadding;
+    let imageUnitWidth = IMAGE_WIDTH / IMAGE_HEIGHT;
+
+    let containerHeight = windowWidth * imageUnitWidth;
+    setContainerHeight(`${containerHeight}px`);
+  }, []);
+
   let featureItems = [
     {
       id: 9127,
@@ -54,7 +69,10 @@ export const Feature = () => {
     <section>
       <div className="relative grid py-[80px] px-pageMargin-sm sm:px-pageMargin-md md:gap-y-[40px] lg:gap-y-[48px] lg:px-pageMargin-lg">
         {/* column 1 */}
-        <div className={"relative hidden h-[650px] md:block"}>
+        <div
+          style={{ height: containerHeight }}
+          className="relative hidden md:block"
+        >
           <Image
             src="/illustrations/Live-streaming-featured.svg"
             alt="responsive Image of live streaming platform"
