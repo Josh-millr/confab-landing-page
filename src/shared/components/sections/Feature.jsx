@@ -69,10 +69,7 @@ export const Feature = () => {
     <section>
       <div className="relative grid py-[80px] px-pageMargin-sm sm:px-pageMargin-md md:gap-y-[40px] lg:gap-y-[48px] lg:px-pageMargin-lg">
         {/* column 1 */}
-        <div
-          style={{ height: containerHeight }}
-          className="relative hidden md:block"
-        >
+
           <Image
             src="/illustrations/Live-streaming-featured.svg"
             alt="responsive Image of live streaming platform"
