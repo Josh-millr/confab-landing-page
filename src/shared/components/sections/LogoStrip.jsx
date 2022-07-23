@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export const Testimonials = () => {
+export const LogoStrip = () => {
   return (
     <div className="grid grid-cols-1 grid-rows-1 items-center bg-cloudy py-[64px] px-[54px] sm:py-[48px] sm:px-[40px] md:py-[64px] md:px-[64px] lg:py-[64px] lg:px-[214px]">
       <div className="grid grid-cols-3 grid-rows-2 justify-items-center gap-x-[48px] gap-y-[24px] sm:grid-cols-6 sm:grid-rows-1 md:gap-x-[64px]">

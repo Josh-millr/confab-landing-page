@@ -1,7 +1,7 @@
 import { NavBar } from "@components/sections/NavBar";
 import { Hero } from "@components/sections/Hero";
-import { Testimonials } from "@components/sections/Testimonials";
-import {Feature} from "@components/sections/Feature";
+import { LogoStrip } from "@components/sections/LogoStrip";
+import { Feature } from "@components/sections/Feature";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
         <Hero />
       </header>
       <main>
-        <Testimonials />
-        <Feature/>
+        <LogoStrip />
+        <Feature />
       </main>
     </>
   );
