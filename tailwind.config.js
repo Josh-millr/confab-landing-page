@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       white: "#FFFFFF",
       black: "#000000",
-      stormy: "323334",
+      stormy: "#323334",
       smoke: "#4E4F51",
       cloudy: "#F5F4F3",
       timber: "#BBA28B",
@@ -70,7 +70,7 @@ module.exports = {
       h5: [
         "20px",
         {
-          letterSpacing: "-2px",
+          letterSpacing: "-1px",
           lineHeight: "18px",
         },
       ],

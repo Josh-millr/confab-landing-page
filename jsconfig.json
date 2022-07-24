@@ -11,6 +11,9 @@
             "@styles/*": [
                 "src/shared/styles/*"
             ],
+            "@utils/*": [
+                "src/shared/utils/*"
+            ],
             "@pages/*": [
                 "src/pages/*"
             ]
