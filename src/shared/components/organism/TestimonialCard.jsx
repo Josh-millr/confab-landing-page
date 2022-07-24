@@ -11,12 +11,11 @@ export const TestimonialCard = (testimonialInfo) => {
         <div className="grid gap-y-[16px]">
           <h3 className="font-heading text-h3 text-black">
             <span className="text-crayola">&quot;</span>
-            dream come true
+            {title}
             <span className="text-crayola">&quot;</span>
           </h3>
-          <p className="font-body text-body-md text-smoke">
-            [Testimonial goes in here] multi-paragraph, and conferences, anyone
-            can share, join or become a host (virtual events).
+          <p className="font-body text-body-md text-smoke min-w-[279px]">
+            {description}
           </p>
         </div>
 
