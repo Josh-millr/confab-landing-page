@@ -4,7 +4,7 @@ import { RiArrowRightFill } from "react-icons/ri";
 
 export const NoticeCard = () => {
   return (
-    <div className="grid max-w-[344px] grid-rows-1 gap-y-[64px] rounded-[30px]  border-[2px] border-black bg-white py-[42px] px-[30px] md:max-w-[360px] md:gap-y-[140px] lg:p-[32px]">
+    <div className="grid max-w-[344px] grid-rows-1 gap-y-[64px] rounded-[30px]  border-[4px] border-black bg-white py-[42px] px-[30px] md:max-w-[360px] md:gap-y-[140px] lg:p-[32px]">
       <div className="grid grid-rows-1 gap-y-[8px] font-heading">
         <h1 className="ld:text-h3 text-h4 text-black">
           make a unique illustration design character
