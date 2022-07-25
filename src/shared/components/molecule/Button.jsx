@@ -5,10 +5,11 @@ export const Button = ({ label, icon: Icon, type, size }) => {
     base: "flex items-center justify-center gap-x-[8px] whitespace-nowrap rounded-full font-btn",
     type: {
       primary: "bg-black text-white",
-      stroke: "border-[1px] text-black",
+      stroke: "border-[2px] text-black",
     },
     size: {
       md: "px-[16px] py-[8px] text-btn font-semibold",
+      sm: "p-[8px] text-btn font-semibold",
     },
   };
   return (

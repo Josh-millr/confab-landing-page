@@ -5,6 +5,7 @@ import { Hero } from "@components/sections/Hero";
 import { LogoStrip } from "@components/sections/LogoStrip";
 import { Feature } from "@components/sections/Feature";
 import { Testimonial } from "@components/sections/Testimonial";
+import { NoticeBoard } from "@components/sections/NoticeBoard";
 
 export default function Home({ testimonialData }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ testimonialData }) {
         <LogoStrip />
         <Feature />
         <Testimonial data={testimonialData} />
+        <NoticeBoard />
       </main>
     </>
   );
