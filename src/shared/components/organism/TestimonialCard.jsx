@@ -14,7 +14,7 @@ export const TestimonialCard = (testimonialInfo) => {
             {title}
             <span className="text-crayola">&quot;</span>
           </h3>
-          <p className="font-body text-body-md text-smoke min-w-[279px]">
+          <p className="min-w-[279px] font-body text-body-md text-smoke">
             {description}
           </p>
         </div>
@@ -29,9 +29,9 @@ export const TestimonialCard = (testimonialInfo) => {
             />
           </div>
           <div className="grid">
-            <h5 className="font-heading text-h5 text-stormy">kamala</h5>
+            <h5 className="font-heading text-h5 text-stormy">{name}</h5>
             <p className="font-body text-body-sm text-smoke">
-              Product Designer, Indonesia.
+              {`${jobRole}, ${country}`}
             </p>
           </div>
         </div>

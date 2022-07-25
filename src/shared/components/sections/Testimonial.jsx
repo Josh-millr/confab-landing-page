@@ -4,11 +4,11 @@ import { TestimonialCard } from "@components/index";
 export const Testimonial = ({ data }) => {
   let testimonialData = data.testimonials;
 
-  let testimonails = testimonialData.map(
-    ({ id, title, description, country, name, jobRole }) => (
+  let testimonials = testimonialData.map(
+    ({ id, quote, description, country, name, jobRole }) => (
       <TestimonialCard
         key={id}
-        title={title}
+        title={quote}
         description={description}
         name={name}
         jobRole={jobRole}
@@ -19,12 +19,12 @@ export const Testimonial = ({ data }) => {
 
   return (
     <section>
-      <div className="overflow-hidden grid gap-y-[64px] bg-cloudy py-[124px] sm:gap-y-[48px] sm:py-[64px] lg:gap-y-[40px] lg:py-[124px]">
+      <div className="grid gap-y-[64px] overflow-hidden bg-cloudy py-[124px] sm:gap-y-[48px] sm:py-[64px] lg:gap-y-[40px] lg:py-[124px]">
         <div className="fff flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
-          {testimonails}
+          {testimonials}
         </div>
         <div className="flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
-          {testimonails}
+          {testimonials}
         </div>
       </div>
     </section>
