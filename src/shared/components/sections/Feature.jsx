@@ -7,7 +7,6 @@ export const Feature = () => {
   let [containerHeight, setContainerHeight] = useState("0px");
 
   useEffect(() => {
-    // Image Dimention
     const IMAGE_HEIGHT = 793;
     const IMAGE_WIDTH = 396;
 

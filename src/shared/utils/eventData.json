@@ -1,0 +1,28 @@
+{
+    "events": [
+        {
+            "id": "213213",
+            "title": "make the illustraton unique and let it be the center of the design",
+            "date": "thu, 19 may 2022",
+            "author": "Pablo Stanley",
+            "jobRole": "Art Director & Illustrator",
+            "img": "/illustrations/muslim-lady.svg"
+        },
+        {
+            "id": "211233",
+            "title": "make the illustraton unique and let it be the center of the design",
+            "date": "thu, 19 may 2022",
+            "author": "Pablo Stanley",
+            "jobRole": "Art Director & Illustrator",
+            "img": "/illustrations/muslim-lady.svg"
+        },
+        {
+            "id": "211423",
+            "title": "make the illustraton unique and let it be the center of the design",
+            "date": "thu, 19 may 2022",
+            "author": "Pablo Stanley",
+            "jobRole": "Art Director & Illustrator",
+            "img": "/illustrations/muslim-lady.svg"
+        }
+    ]
+}

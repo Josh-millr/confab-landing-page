@@ -7,7 +7,7 @@ import { Feature } from "@components/sections/Feature";
 import { Testimonial } from "@components/sections/Testimonial";
 import { NoticeBoard } from "@components/sections/NoticeBoard";
 
-export default function Home({ testimonialData }) {
+export default function Home({ testimonialData, eventData }) {
   return (
     <>
       <header>
@@ -18,25 +18,29 @@ export default function Home({ testimonialData }) {
         <LogoStrip />
         <Feature />
         <Testimonial data={testimonialData} />
-        <NoticeBoard />
+        <NoticeBoard data={eventData} />
       </main>
     </>
   );
 }
 
 export async function getStaticProps(context) {
-  let filePathToTestimonialData = path.join(
-    process.cwd(),
-    "/src/shared/utils/testimonialData.json"
-  );
-  const testimonialDataRaw = await fsPromises.readFile(
-    filePathToTestimonialData
-  );
-  const testimonialDataParse = JSON.parse(testimonialDataRaw);
+  const eventDataFilePath = "/src/shared/utils/eventData.json";
+  const testimonialDataFilePath = "/src/shared/utils/testimonialData.json";
+
+  const testimonialDataPath = path.join(process.cwd(), testimonialDataFilePath);
+  const eventDataPath = path.join(process.cwd(), eventDataFilePath);
+
+  const testimonialDataRaw = await fsPromises.readFile(testimonialDataPath);
+  const eventDataRaw = await fsPromises.readFile(eventDataPath);
+
+  const testimonialDataParsed = JSON.parse(testimonialDataRaw);
+  const eventDataParsed = JSON.parse(eventDataRaw);
 
   return {
     props: {
-      testimonialData: testimonialDataParse,
+      testimonialData: testimonialDataParsed,
+      eventData: eventDataParsed,
     },
   };
 }

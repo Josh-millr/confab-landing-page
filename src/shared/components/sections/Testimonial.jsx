@@ -20,10 +20,10 @@ export const Testimonial = ({ data }) => {
   return (
     <section>
       <div className="grid gap-y-[64px] overflow-hidden bg-cloudy py-[124px] sm:gap-y-[48px] sm:py-[64px] lg:gap-y-[40px] lg:py-[124px]">
-        <div className="fff flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
+        <div className="relative left-[-14%] flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
           {testimonials}
         </div>
-        <div className="flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
+        <div className="relative left-[-36%] flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
           {testimonials}
         </div>
       </div>

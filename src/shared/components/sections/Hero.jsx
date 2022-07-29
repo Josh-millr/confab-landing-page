@@ -1,11 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { Button, NoticeCard } from "@components/index.js";
-import {
-  RiNotification3Fill,
-  RiGroup2Fill,
-  RiArrowRightLine,
-} from "react-icons/ri";
+import { RiNotification3Fill, RiGroup2Fill } from "react-icons/ri";
 
 export const Hero = ({}) => {
   return (
@@ -13,7 +8,7 @@ export const Hero = ({}) => {
       role="banner"
       className="grid gap-y-[32px] pb-[42px] md:pb-[82px] lg:pb-[64px]"
     >
-      <div className="grid grid-cols-1 grid-rows-1 items-center justify-center gap-y-[8px] px-pageMargin-sm py-[42px] sm:grid-cols-2 sm:gap-x-[0px] sm:py-[80px] sm:px-pageMargin-md lg:px-pageMargin-lg">
+      <div className="grid grid-cols-1 grid-rows-1 place-content-center gap-y-[8px] px-pageMargin-sm py-[42px] sm:grid-cols-2 sm:gap-x-[0px] sm:py-[80px] sm:px-pageMargin-md lg:px-pageMargin-lg">
         <div className="grid-row-2 grid grid-cols-1 text-center font-heading text-h2 sm:text-left md:pl-[32px] md:text-h1">
           <h1 className="text-black">VIRTUAL</h1>
           <h1 className=" text-opal">CONFERENCES</h1>
@@ -37,16 +32,23 @@ export const Hero = ({}) => {
               </div>
             </div>
             {/* column 2 */}
-            <div className="relative flex items-center justify-center md:static md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3 lg:justify-start">
-              <NoticeCard />
+            <div className="relative flex place-content-center md:static md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3 lg:justify-start">
+              <NoticeCard
+                title="make the day hay while the sun shine"
+                date="thu, 19 may 2022"
+                author="Pablo Stanley"
+                jobRole="Art Director & Illustrator"
+                image="/images/profile-image.png"
+              />
             </div>
             {/* column 3 */}
-            <div className="relative flex items-center justify-center gap-x-[8px] py-[24px] md:static md:items-end md:pb-[8px] md:pt-[0px] lg:justify-end">
+            <div className="relative flex place-content-center gap-x-[8px] py-[24px] md:static md:items-end md:pb-[8px] md:pt-[0px] lg:justify-end">
               <Button
                 label="Remind me"
                 icon={RiNotification3Fill}
                 type="primary"
                 size="md"
+                image="/images/profile-image.png"
               />
               <div className="flex gap-x-[8px] rounded-full bg-white py-[8px] px-[8px] font-body text-body-sm font-bold text-black">
                 <RiGroup2Fill size={24} />

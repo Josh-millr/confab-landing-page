@@ -2,20 +2,20 @@ import React from "react";
 import Image from "next/image";
 import { RiArrowRightFill } from "react-icons/ri";
 
-export const NoticeCard = () => {
+export const NoticeCard = ({ title, date, author, jobRole, image }) => {
   return (
-    <div className="grid max-w-[344px] grid-rows-1 gap-y-[88px] rounded-[30px] border-[4px] border-black bg-white py-[42px] px-[30px] md:max-w-[360px] md:gap-y-[140px] lg:p-[32px]">
+    <div className="grid grid-rows-1 gap-y-[88px] rounded-[30px] border-[4px] border-black bg-white py-[42px] px-[30px] md:gap-y-[140px] lg:p-[32px]">
       <div className="grid grid-rows-1 gap-y-[8px] font-heading">
-        <h1 className="ld:text-h3 text-h4 text-black">
-          make a unique illustration design character
+        <h1 className="ld:text-h3 min-w-[220px] max-w-[336px] text-h4 text-black">
+          {title}
         </h1>
-        <h3 className="text-h5 text-crayola">thu, 19 may 2022</h3>
+        <h3 className="text-h5 text-crayola">{date}</h3>
       </div>
       <div className="grid grid-rows-1 gap-y-[16px]">
         <div className="">
           <Image
             className="rounded-[16px]"
-            src="/images/profile-image.png"
+            src={image}
             alt="Profile picture"
             height={46}
             width={46}
@@ -23,8 +23,8 @@ export const NoticeCard = () => {
         </div>
         <div className="grid grid-cols-[auto_auto] grid-rows-1">
           <div className="text-smoke">
-            <h3 className="font-heading text-h5">Pablo Stanley</h3>
-            <p className="font-body text-body-sm">Art Director & Illustrator</p>
+            <h3 className="font-heading text-h5">{author}</h3>
+            <p className="font-body text-body-sm">{jobRole}</p>
           </div>
           <div className="flex items-center justify-end">
             <RiArrowRightFill size={20} />
