@@ -2,7 +2,7 @@ import React from "react";
 
 export const Button = ({ label, icon: Icon, type, size }) => {
   let buttonProps = {
-    base: "flex place-content-center gap-x-[8px] whitespace-nowrap rounded-full font-btn w-[fit-content] h-fit",
+    base: "flex place-items-center gap-x-[8px] whitespace-nowrap rounded-full font-btn w-[fit-content] h-fit",
     type: {
       primary: "bg-black text-white",
       stroke: "border-[2px] text-black",

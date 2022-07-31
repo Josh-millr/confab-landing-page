@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Button } from "@components/index";
+import { RiArrowRightCircleFill } from "react-icons/ri";
+
 
 export const StepPlanCard = ({
   title,
@@ -30,7 +32,7 @@ export const StepPlanCard = ({
           <p className="max-w-[400px] font-body text-body-md text-smoke">
             {decription}
           </p>
-          <Button label="get started" size="md" type={btn} />
+          <Button label="get started" size="md" type={btn} icon={RiArrowRightCircleFill} />
         </div>
       </div>
     </div>
