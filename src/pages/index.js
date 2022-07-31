@@ -7,6 +7,8 @@ import { Feature } from "@components/sections/Feature";
 import { Testimonial } from "@components/sections/Testimonial";
 import { NoticeBoard } from "@components/sections/NoticeBoard";
 import { MainSteps } from "@components/sections/MainSteps";
+import { StepPlan } from "@components/sections/StepPlan";
+
 
 export default function Home({ testimonialData, eventData }) {
   return (
@@ -21,6 +23,7 @@ export default function Home({ testimonialData, eventData }) {
         <Testimonial data={testimonialData} />
         <NoticeBoard data={eventData} />
         <MainSteps />
+        <StepPlan />
       </main>
     </>
   );
