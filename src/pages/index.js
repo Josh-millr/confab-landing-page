@@ -8,7 +8,7 @@ import { Testimonial } from "@components/sections/Testimonial";
 import { NoticeBoard } from "@components/sections/NoticeBoard";
 import { MainSteps } from "@components/sections/MainSteps";
 import { StepPlan } from "@components/sections/StepPlan";
-
+import { Newsletter } from "@components/sections/Newsletter";
 
 export default function Home({ testimonialData, eventData }) {
   return (
@@ -24,6 +24,7 @@ export default function Home({ testimonialData, eventData }) {
         <NoticeBoard data={eventData} />
         <MainSteps />
         <StepPlan />
+        <Newsletter />
       </main>
     </>
   );
