@@ -6,6 +6,7 @@ import { LogoStrip } from "@components/sections/LogoStrip";
 import { Feature } from "@components/sections/Feature";
 import { Testimonial } from "@components/sections/Testimonial";
 import { NoticeBoard } from "@components/sections/NoticeBoard";
+import { MainSteps } from "@components/sections/MainSteps";
 
 export default function Home({ testimonialData, eventData }) {
   return (
@@ -19,6 +20,7 @@ export default function Home({ testimonialData, eventData }) {
         <Feature />
         <Testimonial data={testimonialData} />
         <NoticeBoard data={eventData} />
+        <MainSteps />
       </main>
     </>
   );
