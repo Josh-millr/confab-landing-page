@@ -4,3 +4,10 @@
 @import url("Koulen[font-dec].css");
 @import url("general-sans[font-dec].css");
 @import url("satoshi[font-dec].css");
+
+@layer base {
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+}
