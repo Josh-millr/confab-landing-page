@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { RiSendPlane2Fill } from "react-icons/ri";
 
 export const Newsletter = ({}) => {
   return (
-    <div className="grid grid-rows-1 gap-y-[80px] bg-cloudy px-pageMargin-sm py-[80px] sm:gap-y-[56px] sm:px-pageMargin-md sm:py-[62px] lg:gap-x-[64px] lg:px-pageMargin-lg lg:py-[96px]">
+    <div className="grid grid-rows-1 gap-y-[40px] bg-cloudy px-pageMargin-sm py-[80px] sm:gap-y-[56px] sm:px-pageMargin-md sm:py-[62px] lg:gap-x-[64px] lg:px-pageMargin-lg lg:py-[96px]">
       {/* Column 1 */}
       <div className=" grid grid-rows-1 gap-y-[8px]">
         <div className="md:hidden">
@@ -34,19 +35,27 @@ export const Newsletter = ({}) => {
         </div>
       </div>
 
-      {/* Column 3 */}
-      <form action="" method="post" className="grid">
+      {/* Column 2 */}
+      <form action="" method="post" className="grid gap-y-[16px] lg:gap-y-[24px] max-w-[498px]">
+        {/* // TODO: Add email validation checker */}
         <input
-        role="email"
-          className="h-[56px] max-w-[498px] rounded-full border-[2px] border-black px-[32px] font-body text-body-sm text-smoke"
-          type="text" name="" id=""
+          // pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          type="text"
+          role="email"
+          className="h-[56px] max-w-[inherit] rounded-full border-[2px] border-black px-[32px] font-body text-body-sm text-smoke"
           placeholder="Your email address"
         />
-        <div className="flex">
+        <div className="flex justify-between">
           {/* // TODO: Style checkbox */}
-          <input type="checkbox" name="" id="" className=""/>
+          <input type="checkbox" name="" id="" className="" />
           {/* // TODO: Style button */}
-          <button className="" type="submit">Subscribe</button>
+          <button
+            className="flex gap-x-[16px] place-content-center rounded-full bg-black px-[24px] py-[16px] text-white"
+            type="submit"
+          >
+            <p className="font-body capitalize font-medium text-body-md">Subscribe</p>
+            <RiSendPlane2Fill size="16"/>
+          </button>
         </div>
       </form>
     </div>
