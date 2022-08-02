@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { RiSendPlane2Fill } from "react-icons/ri";
 
 export const Newsletter = ({}) => {
@@ -43,19 +44,38 @@ export const Newsletter = ({}) => {
       >
         {/* // TODO: Add email validation checker */}
         <input
-          // pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           type="text"
           role="email"
           className="h-[56px] max-w-[inherit] rounded-full border-[2px] border-black px-[32px] font-body text-body-sm text-smoke"
           placeholder="Your email address"
         />
-        <div className="flex justify-between">
-          {/* // TODO: Style checkbox */}
-          <input type="checkbox" name="" id="" className="" />
-          {/* // TODO: Style button */}
+        <div className="grid grid-rows-1 justify-items-center gap-y-[24px] sm:grid-cols-2 sm:justify-between sm:justify-items-end sm:gap-y-[0px] sm:pl-[16px]">
+          {/*  */}
+          <div className="relative">
+            <input type="checkbox" name="privacy-check" id="privacyCheck" />
+            <label
+              htmlFor="privacyCheck"
+              className="pl-[32px] font-body text-[12px] capitalize text-smoke"
+            >
+              I agree with {""}
+              <Link href="/">
+                <a>
+                  <span className="underline">privacy policy</span>
+                </a>
+              </Link>{" "}
+              and{" "}
+              <Link href="/">
+                <a>
+                  <span className="underline">terms of condition</span>
+                </a>
+              </Link>
+              .
+            </label>
+          </div>
           <button
             type="submit"
-            className="flex place-items-center gap-x-[16px] rounded-full bg-black px-[24px] py-[16px] text-white"
+            className="flex h-fit w-[fit-content] place-items-center gap-x-[16px] rounded-full bg-black px-[24px] py-[16px] text-white"
           >
             <p className="font-body text-body-md font-medium capitalize">
               Subscribe

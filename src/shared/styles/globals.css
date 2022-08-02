@@ -5,9 +5,44 @@
 @import url("general-sans[font-dec].css");
 @import url("satoshi[font-dec].css");
 
-@layer base {
+@layer utilities {
   textarea:focus,
   input:focus {
     outline: none;
+  }
+  input[type="checkbox"] {
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+  }
+  input[type="checkbox"] + label::before {
+    @apply bg-stormy;
+    border-radius: 8px;
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    top: 0;
+    left: 0;
+  }
+  input[type="checkbox"] + label::after {
+    content: "";
+    border: 2px solid white;
+    border-left: 0;
+    border-top: 0;
+    height: 14px;
+    left: 8px;
+    top: 3px;
+    opacity: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 9px;
+  }
+  input[type="checkbox"]:checked + label::after {
+    opacity: 1;
   }
 }
