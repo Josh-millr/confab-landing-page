@@ -36,7 +36,11 @@ export const Newsletter = ({}) => {
       </div>
 
       {/* Column 2 */}
-      <form action="" method="post" className="grid gap-y-[16px] lg:gap-y-[24px] max-w-[498px]">
+      <form
+        action=""
+        method="post"
+        className="grid max-w-[498px] gap-y-[16px] lg:gap-y-[24px]"
+      >
         {/* // TODO: Add email validation checker */}
         <input
           // pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
@@ -50,11 +54,13 @@ export const Newsletter = ({}) => {
           <input type="checkbox" name="" id="" className="" />
           {/* // TODO: Style button */}
           <button
-            className="flex gap-x-[16px] place-items-center rounded-full bg-black px-[24px] py-[16px] text-white"
             type="submit"
+            className="flex place-items-center gap-x-[16px] rounded-full bg-black px-[24px] py-[16px] text-white"
           >
-            <p className="font-body capitalize font-medium text-body-md">Subscribe</p>
-            <RiSendPlane2Fill size="16"/>
+            <p className="font-body text-body-md font-medium capitalize">
+              Subscribe
+            </p>
+            <RiSendPlane2Fill size="16" />
           </button>
         </div>
       </form>
