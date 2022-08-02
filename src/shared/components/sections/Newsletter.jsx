@@ -50,7 +50,7 @@ export const Newsletter = ({}) => {
           <input type="checkbox" name="" id="" className="" />
           {/* // TODO: Style button */}
           <button
-            className="flex gap-x-[16px] place-content-center rounded-full bg-black px-[24px] py-[16px] text-white"
+            className="flex gap-x-[16px] place-items-center rounded-full bg-black px-[24px] py-[16px] text-white"
             type="submit"
           >
             <p className="font-body capitalize font-medium text-body-md">Subscribe</p>
