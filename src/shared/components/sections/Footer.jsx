@@ -60,7 +60,7 @@ export const Footer = () => {
               </div>
             </div>
             {/* For links */}
-            <div className="grid w-[fit-content] grid-cols-[auto_auto] grid-rows-1 gap-x-[24px]">
+            <div className="grid w-[fit-content] grid-cols-[auto_auto] grid-rows-1 gap-x-[24px] md:gap-x-[72px] lg:gap-x-[132px]">
               <div className="grid gap-y-[16px] font-body text-body-sm">
                 <h4 className="font-bold capitalize text-smoke">menu</h4>
                 <ul className="grid grid-rows-1 gap-y-[16px] font-medium text-black">
