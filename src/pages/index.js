@@ -9,6 +9,8 @@ import { NoticeBoard } from "@components/sections/NoticeBoard";
 import { MainSteps } from "@components/sections/MainSteps";
 import { StepPlan } from "@components/sections/StepPlan";
 import { Newsletter } from "@components/sections/Newsletter";
+import { CreateEvent } from "@components/sections/CreateEvent";
+import { Footer } from "@components/sections/Footer";
 
 export default function Home({ testimonialData, eventData }) {
   return (
@@ -25,7 +27,9 @@ export default function Home({ testimonialData, eventData }) {
         <MainSteps />
         <StepPlan />
         <Newsletter />
+        <CreateEvent />
       </main>
+      <Footer />
     </>
   );
 }
