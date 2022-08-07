@@ -8,7 +8,8 @@ export const CreateEvent = () => {
         {/* Title */}
         <h1 className="font-heading text-h2 text-black md:text-h1">
           host
-          <br /> <span className="text-opal">for free</span>
+          <br />
+          <span className="text-opal">for free</span>
         </h1>
         {/* Description */}
         <div className="grid grid-cols-1 grid-rows-1 gap-y-[24px]">
