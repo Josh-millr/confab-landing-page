@@ -122,7 +122,9 @@ export const Footer = () => {
           <p className="w-fill font-medium">Privacy Policy</p>
           <p className="w-fill font-medium">Terms & Conditions</p>
         </div>
-        <p className="sm:justify-self-start">© 2022 Confab. All rights reserved.</p>
+        <p className="sm:justify-self-start">
+          © 2022 Confab. All rights reserved.
+        </p>
       </div>
     </footer>
   );
