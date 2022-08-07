@@ -58,7 +58,7 @@ export const Footer = () => {
                   type="stroke"
                 />
               </div>
-            </div> 
+            </div>
             {/* For links */}
             <div className="grid w-[fit-content] grid-cols-[auto_auto] grid-rows-1 gap-x-[24px] md:gap-x-[72px] lg:gap-x-[132px]">
               <div className="grid gap-y-[16px] font-body text-body-sm">
@@ -116,13 +116,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="grid-row-1 grid h-fit grid-cols-1 sm:justify-between justify-items-center gap-y-[16px] bg-cloudy py-[24px] px-pageMargin-sm font-caption text-caption text-smoke sm:grid-cols-2 sm:px-pageMargin-md lg:px-pageMargin-lg">
+      <div className="grid-row-1 grid h-fit grid-cols-1 justify-items-center gap-y-[16px] bg-cloudy py-[24px] px-pageMargin-sm font-caption text-caption text-smoke sm:grid-cols-2 sm:justify-between sm:px-pageMargin-md lg:px-pageMargin-lg">
         {/* Year or start  */}
-        <div className="flex w-full justify-center gap-x-[24px] order-last">
+        <div className="order-last flex w-full justify-center gap-x-[24px] sm:justify-end">
           <p className="w-fill font-medium">Privacy Policy</p>
           <p className="w-fill font-medium">Terms & Conditions</p>
         </div>
-        <p className="">© 2022 Confab. All rights reserved.</p>
+        <p className="sm:justify-self-start">© 2022 Confab. All rights reserved.</p>
       </div>
     </footer>
   );
