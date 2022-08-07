@@ -12,7 +12,7 @@ export const CreateEvent = () => {
         </h1>
         {/* Description */}
         <div className="grid grid-cols-1 grid-rows-1 gap-y-[24px]">
-          <Button label="new event" icon={RiAddFill} type="stroke" size="md" />
+          <Button label="New event" icon={RiAddFill} type="stroke" size="md" />
           <p className="max-w-[400px] font-body text-body-sm text-black">
             Virtual meetings, and conferences, anyone can share, join or host
             (virtual events).
