@@ -4,7 +4,7 @@ import { RiAddFill } from "react-icons/ri";
 
 export const CreateEvent = () => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {/* Column 1 */}
       <div className="grid grid-cols-1 grid-rows-1 gap-y-[56px] py-[60px] px-pageMargin-sm sm:grid-cols-2 sm:px-pageMargin-md md:py-[80px] lg:px-pageMargin-lg">
         {/* Title */}
