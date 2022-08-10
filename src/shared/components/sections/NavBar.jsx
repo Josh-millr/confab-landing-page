@@ -17,7 +17,7 @@ export const NavBar = () => {
   return (
     <nav
       role="navigation"
-      className="flex w-full px-pageMargin-sm py-[42px] sm:px-pageMargin-md sm:py-[32px] md:gap-x-[22px] lg:px-pageMargin-lg"
+      className="flex w-full bg-white top-[0px] z-10 px-pageMargin-sm py-[42px] sm:px-pageMargin-md sm:py-[32px] md:gap-x-[22px] lg:px-pageMargin-lg"
     >
       <div className="my-auto w-2/6 items-center sm:w-1/6">
         <Image
