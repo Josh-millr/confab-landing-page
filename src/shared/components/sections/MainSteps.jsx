@@ -45,22 +45,24 @@ export const MainSteps = ({}) => {
     )
   );
   return (
-    <div className="grid grid-rows-1 gap-y-[64px] bg-cloudy px-pageMargin-sm py-[52px] sm:px-pageMargin-md md:py-[96px] lg:gap-y-[48px] lg:px-pageMargin-lg">
-      {/* Column 1 */}
-      <div className="grid grid-rows-1 gap-y-[16px] md:grid-cols-2 md:gap-y-[0px]">
-        <div className="grid gap-y-[8px] font-heading text-h3 sm:text-h2 lg:text-h1">
-          <h3 className=" text-black ">main</h3>
-          <h3 className="text-opal">features</h3>
+    <section>
+      <div className="grid grid-rows-1 gap-y-[64px] bg-cloudy px-pageMargin-sm py-[52px] sm:px-pageMargin-md md:py-[96px] lg:gap-y-[48px] lg:px-pageMargin-lg">
+        {/* Column 1 */}
+        <header className="grid grid-rows-1 gap-y-[16px] md:grid-cols-2 md:gap-y-[0px]">
+          <div className="grid gap-y-[8px] font-heading text-h3 sm:text-h2 lg:text-h1">
+            <h2 className=" text-black ">main</h2>
+            <h2 className="text-opal">features</h2>
+          </div>
+          <p className="font-body text-body-md text-smoke sm:max-w-[400px] md:self-end md:justify-self-end">
+            Virtual meetings, and conferences, anyone can share, join or host
+            (virtual events).
+          </p>
+        </header>
+        {/* Column 2 */}
+        <div className="grid grid-cols-1 grid-rows-1 place-content-center gap-y-[16px] sm:grid-cols-3 sm:gap-y-[0px] sm:gap-x-[24px] lg:gap-x-[40px]">
+          {activityList}
         </div>
-        <p className="font-body text-body-md text-smoke sm:max-w-[400px] md:self-end md:justify-self-end">
-          Virtual meetings, and conferences, anyone can share, join or host
-          (virtual events).
-        </p>
       </div>
-      {/* Column 2 */}
-      <div className="grid grid-cols-1 grid-rows-1 place-content-center gap-y-[16px] sm:grid-cols-3 sm:gap-y-[0px] sm:gap-x-[24px] lg:gap-x-[40px]">
-        {activityList}
-      </div>
-    </div>
+    </section>
   );
 };

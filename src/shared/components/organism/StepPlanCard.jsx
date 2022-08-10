@@ -25,8 +25,8 @@ export const StepPlanCard = ({
         className={`grid h-fit grid-rows-1 gap-y-[8px] px-pageMargin-sm sm:px-[0px]`}
       >
         <div className="grid gap-y-[8px] font-heading text-h3 lg:text-h2">
-          <h3 className=" text-black">{title}</h3>
-          <h3 className={`${highlightColor}`}>{highlight}</h3>
+          <h2 className=" text-black">{title}</h2>
+          <h2 className={`${highlightColor}`}>{highlight}</h2>
         </div>
         <div className="grid gap-y-[24px]">
           <p className="max-w-[400px] font-body text-body-md text-smoke">

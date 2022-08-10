@@ -6,10 +6,10 @@ export const NoticeCard = ({ title, date, author, jobRole, image }) => {
   return (
     <div className="grid grid-rows-1 gap-y-[88px] rounded-[30px] border-[4px] border-black bg-white py-[42px] px-[30px] md:gap-y-[140px] lg:p-[32px]">
       <div className="grid grid-rows-1 gap-y-[8px] font-heading">
-        <h1 className="ld:text-h3 min-w-[220px] max-w-[336px] text-h4 text-black">
+        <h3 className="ld:text-h3 min-w-[220px] max-w-[336px] text-h4 text-black">
           {title}
-        </h1>
-        <h3 className="text-h5 text-crayola">{date}</h3>
+        </h3>
+        <h4 className="text-h5 text-crayola">{date}</h4>
       </div>
       <div className="grid grid-rows-1 gap-y-[16px]">
         <div className="">
@@ -23,7 +23,7 @@ export const NoticeCard = ({ title, date, author, jobRole, image }) => {
         </div>
         <div className="grid grid-cols-[auto_auto] grid-rows-1">
           <div className="text-smoke">
-            <h3 className="font-heading text-h5">{author}</h3>
+            <h4 className="font-heading text-h5">{author}</h4>
             <p className="font-body text-body-sm">{jobRole}</p>
           </div>
           <div className="flex items-center justify-end">

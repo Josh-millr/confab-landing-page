@@ -9,11 +9,11 @@ export const TestimonialCard = (testimonialInfo) => {
       <div className="grid gap-y-[32px] sm:gap-y-[48px] lg:gap-y-[64px]">
         {/* column 1 */}
         <div className="grid gap-y-[16px]">
-          <h3 className="font-heading text-h3 text-black">
+          <h4 className="font-heading text-h3 text-black">
             <span className="text-crayola">&quot;</span>
             {title}
             <span className="text-crayola">&quot;</span>
-          </h3>
+          </h4>
           <p className="min-w-[279px] font-body text-body-md text-smoke">
             {description}
           </p>

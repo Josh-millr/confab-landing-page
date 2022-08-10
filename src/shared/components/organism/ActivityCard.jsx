@@ -28,7 +28,7 @@ export const ActivityCard = ({
       <div
         className={`grid gap-y-[8px] ${flow === textFlowProps[flow] && flow}`}
       >
-        <h1 className="font-heading text-h4 text-black">{heading}</h1>
+        <h3 className="font-heading text-h4 text-black">{heading}</h3>
         <p className="max-w-[320px] font-body text-body-sm font-medium text-smoke">
           {paraStart} <span className="text-crayola">{paraHighlight}</span>{" "}
           {paraEnd}
