@@ -23,27 +23,33 @@ export const Testimonial = ({ data }) => {
 
   return (
     <section>
-      <div className="grid gap-y-[64px] overflow-hidden bg-cloudy py-[124px] sm:gap-y-[48px] sm:py-[64px] lg:gap-y-[40px] lg:py-[124px]">
-        <div className="relative left-[-14%] flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
-          <Swiper
-            modules={[Autoplay, FreeMode]}
-            loop={true}
-            freeMode={true}
-            spaceBetween={0}
-            slidesPerView="auto"
-            speed={1000}
-            freeModeMomentum={true}
-            autoplay={{
-              delay: 1,
-              disableOnInteraction: true,
-            }}
-          >
-            {testimonials}
-          </Swiper>
-        </div>
-        <div className="relative left-[-36%] flex flex-nowrap gap-x-[16px] sm:gap-x-[24px] lg:gap-x-[40px]">
+      <div></div>
+      {/* grid gap-y-[64px] sm:gap-y-[48px] lg:gap-y-[40px]*/}
+      <div className=" bg-cloudy py-[124px]  sm:py-[64px]  lg:py-[124px]">
+        <Swiper
+          modules={[Autoplay, FreeMode]}
+          loop={true}
+          freeMode={true}
+          speed={5000}
+          freeModeMomentum={true}
+          autoplay={{
+            delay: 1,
+            disableOnInteraction: false,
+          }}
+          // When window width is >= 0p x
+          slidesPerView={1}
+          spaceBetween={20}
+          
+          breakpoints={{
+            // When window width is >= 0px
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+          }}
+        >
           {testimonials}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
