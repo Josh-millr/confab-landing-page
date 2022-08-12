@@ -19,7 +19,7 @@ export const ActivityCard = ({
   return (
     <div
       className={`grid gap-y-[16px] px-[24px] py-[32px] lg:max-w-[420px] ${
-        active && "rounded-[32px] bg-white"
+        active && "rounded-[32px] bg-white shadow-lg transition-transform"
       }`}
     >
       <div className="relative h-[168px] w-[124px] lg:h-[270px] lg:w-[200px]">
