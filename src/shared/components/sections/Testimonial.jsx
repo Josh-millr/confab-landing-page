@@ -65,7 +65,10 @@ export const Testimonial = ({ data }) => {
           >
             {testimonials}
           </Swiper>
-          <div className="h-[50px]"/>
+
+          {/* Acts as divider to divide slides */}
+          <div className="h-[50px]" />
+
           <Swiper
             modules={[Autoplay, FreeMode]}
             loop={true}
