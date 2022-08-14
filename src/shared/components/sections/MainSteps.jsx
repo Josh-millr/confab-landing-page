@@ -13,6 +13,7 @@ export const MainSteps = ({}) => {
       setFirstStep(stepIncrement == 1 ? true : false);
       setSecondStep(stepIncrement == 2 ? true : false);
       setThirdStep(stepIncrement == 3 ? true : false);
+
       setStepIncrement(incrementedStep);
     }, 2000);
   }, [stepIncrement]);

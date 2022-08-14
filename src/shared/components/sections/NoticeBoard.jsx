@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NoticeCard, Button } from "@components/index";
 import { RiEyeLine, RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const NoticeBoard = ({ data }) => {
+  let [domLoaded, setDomLoaded] = useState(false);
+  useEffect(() => setDomLoaded(true), []);
+
   let events = data.events;
   let eventList = events.map(({ id, title, date, author, jobRole, img }) => (
-    <NoticeCard
-      key={id}
-      title={title}
-      date={date}
-      author={author}
-      jobRole={jobRole}
-      image={img}
-    />
+    <SwiperSlide key={id}>
+      <NoticeCard
+        title={title}
+        date={date}
+        author={author}
+        jobRole={jobRole}
+        image={img}
+      />
+    </SwiperSlide>
   ));
 
   return (
@@ -36,12 +41,18 @@ export const NoticeBoard = ({ data }) => {
           </div>
           {/* Tablet & Desktop only component */}
           <div className="hidden place-content-center items-end gap-x-[88px] sm:gap-x-[32px] md:flex">
-            <div className="h-fit rounded-full bg-white p-[16px] text-black">
+            
+            {/* Left Button */}
+            <div 
+            className="h-fit rounded-full bg-white p-[16px] text-black">
               <RiArrowLeftSLine size={32} />
             </div>
+
+              {/* Right Button */}
             <div className="h-fit rounded-full bg-black p-[16px] text-white">
               <RiArrowRightSLine size={32} />
             </div>
+            
           </div>
         </header>
         {/* Column 2 */}
@@ -51,7 +62,38 @@ export const NoticeBoard = ({ data }) => {
             (virtual events).
           </p>
           <div className="flex gap-x-[16px] overflow-hidden pl-pageMargin-sm sm:gap-x-[24px] sm:p-[0px] lg:gap-x-[40px]">
-            {eventList}
+            {domLoaded && (
+              <Swiper
+                loop={true}
+                allowTouchMove={false}
+                slidesPerView={3}
+                spaceBetween={20}
+                breakpoints={{
+                  375: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
+                }}
+              >
+                {eventList}
+              </Swiper>
+            )}
           </div>
         </div>
         {/* Column 3 - Mobile only component*/}
