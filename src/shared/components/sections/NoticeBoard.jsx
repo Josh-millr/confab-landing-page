@@ -1,24 +1,26 @@
-import React, { useState, useEffect, useRef } from "react";
-import { NoticeCard, Button } from "@components/index";
-import { RiEyeLine, RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { RiEyeLine, RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
+import { NoticeCard, Button } from "@components/index";
 
 export const NoticeBoard = ({ data }) => {
   let [domLoaded, setDomLoaded] = useState(false);
-  useEffect(() => setDomLoaded(true), []);
 
-  let events = data.events;
-  let eventList = events.map(({ id, title, date, author, jobRole, img }) => (
-    <SwiperSlide key={id}>
-      <NoticeCard
-        title={title}
-        date={date}
-        author={author}
-        jobRole={jobRole}
-        image={img}
-      />
-    </SwiperSlide>
-  ));
+  let eventList = data.events.map(
+    ({ id, title, date, author, jobRole, img }) => (
+      <SwiperSlide key={id}>
+        <NoticeCard
+          title={title}
+          date={date}
+          author={author}
+          jobRole={jobRole}
+          image={img}
+        />
+      </SwiperSlide>
+    )
+  );
+
+  useEffect(() => setDomLoaded(true), []);
 
   return (
     <section>
@@ -27,8 +29,10 @@ export const NoticeBoard = ({ data }) => {
         <header className="flex gap-x-[32px] px-pageMargin-sm sm:px-pageMargin-md lg:px-pageMargin-lg">
           <div className="flex w-full items-end justify-between">
             <div className="grid gap-y-[8px] font-heading text-h3 sm:text-h2 lg:text-h1">
-              <h2 className=" text-black ">Upcoming</h2>
-              <h2 className="text-opal">Events</h2>
+              <h2 className=" text-black ">
+                Upcoming <br />
+                <span className="text-opal">Events</span>
+              </h2>
             </div>
             <div>
               <Button
@@ -41,18 +45,15 @@ export const NoticeBoard = ({ data }) => {
           </div>
           {/* Tablet & Desktop only component */}
           <div className="hidden place-content-center items-end gap-x-[88px] sm:gap-x-[32px] md:flex">
-            
             {/* Left Button */}
-            <div 
-            className="h-fit rounded-full bg-white p-[16px] text-black">
+            <div className="h-fit rounded-full bg-white p-[16px] text-black">
               <RiArrowLeftSLine size={32} />
             </div>
 
-              {/* Right Button */}
+            {/* Right Button */}
             <div className="h-fit rounded-full bg-black p-[16px] text-white">
               <RiArrowRightSLine size={32} />
             </div>
-            
           </div>
         </header>
         {/* Column 2 */}
@@ -65,7 +66,7 @@ export const NoticeBoard = ({ data }) => {
             {domLoaded && (
               <Swiper
                 loop={true}
-                allowTouchMove={false}
+                allowTouchMove={true}
                 slidesPerView={3}
                 spaceBetween={20}
                 breakpoints={{
