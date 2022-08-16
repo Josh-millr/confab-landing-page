@@ -21,13 +21,11 @@ export const Footer = () => {
             <RiInstagramFill size={24} />
             <RiLinkedinFill size={24} />
           </div>
-          {/* Space for confab Logo */}
           <div className="sm:[110px] relative h-[30px] w-[120px] sm:order-first sm:h-[32px] lg:h-[48px] lg:w-[164px]">
             <Image src="/confab-logo.png" layout="fill" alt="confab logo" />
           </div>
         </div>
         <div className="grid grid-cols-1 grid-rows-1 gap-y-[40px] ">
-          {/* Bootstrap new event section  */}
           <div className="grid gap-y-[32px] lg:hidden">
             <p className="text-medium max-w-[400px] font-body text-body-md text-smoke">
               Virtual meetings, and conferences, anyone can share, join or host
@@ -59,7 +57,6 @@ export const Footer = () => {
                 />
               </div>
             </div>
-            {/* For links */}
             <div className="grid w-[fit-content] grid-cols-[auto_auto] grid-rows-1 gap-x-[24px] md:gap-x-[72px] lg:gap-x-[132px]">
               <div className="grid gap-y-[16px] font-body text-body-sm">
                 <h4 className="font-bold capitalize text-smoke">menu</h4>
@@ -86,7 +83,6 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              {/* second menu list goes here */}
               <div className="grid gap-y-[16px] font-body text-body-sm">
                 <h4 className="font-bold capitalize text-smoke">About us</h4>
                 <ul className="grid grid-rows-1 gap-y-[16px] font-medium text-black">
@@ -117,13 +113,12 @@ export const Footer = () => {
         </div>
       </div>
       <div className="grid-row-1 grid h-fit grid-cols-1 justify-items-center gap-y-[16px] bg-cloudy py-[24px] px-pageMargin-sm font-caption text-caption text-smoke sm:grid-cols-2 sm:justify-between sm:px-pageMargin-md lg:px-pageMargin-lg">
-        {/* Year or start  */}
         <div className="order-last flex w-full justify-center gap-x-[24px] sm:justify-end">
           <p className="w-fill font-medium">Privacy Policy</p>
           <p className="w-fill font-medium">Terms & Conditions</p>
         </div>
         <p className="sm:justify-self-start">
-          © 2022 Confab. All rights reserved.
+          © 2022 Confab. All rights reserved.{" "}
         </p>
       </div>
     </footer>

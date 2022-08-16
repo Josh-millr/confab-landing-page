@@ -13,13 +13,13 @@ export const Button = ({ label, icon: Icon, type, size }) => {
     },
   };
   return (
-    <button
-      type="button"
+    <button type="button"
       className={`${buttonProps.base} ${type && buttonProps.type[type]} 
-      ${size && buttonProps.size[size]}`}
-    >
+      ${size && buttonProps.size[size]}`}>
+
       {Icon != undefined && <Icon size={16} />}
       {label != undefined && <span>{label}</span>}
+      
     </button>
   );
 };

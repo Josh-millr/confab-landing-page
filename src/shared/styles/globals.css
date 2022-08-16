@@ -6,6 +6,10 @@
 @import url("satoshi[font-dec].css");
 
 @layer utilities {
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
   textarea:focus,
   input:focus {
     outline: none;

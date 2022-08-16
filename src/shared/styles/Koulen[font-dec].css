@@ -12,11 +12,11 @@
 */
 
 @font-face {
-  font-family: "Koulen";
+  font-family: 'Koulen';
   src: url("/fonts/Koulen/fonts/Koulen-Regular.woff2") format("woff2"),
-    url("/fonts/Koulen/fonts/Koulen-Regular.woff") format("woff"),
-    url("/fonts/Koulen/fonts/Koulen-Regular.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
+       url("/fonts/Koulen/fonts/Koulen-Regular.woff") format("woff"),
+       url("/fonts/Koulen/fonts/Koulen-Regular.ttf") format("truetype");
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
 }

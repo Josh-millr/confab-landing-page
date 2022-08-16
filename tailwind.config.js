@@ -23,12 +23,12 @@ module.exports = {
     fontFamily: {
       heading: [
         "Koulen",
+        "Helvetica Neue",
         "Arial",
         "-apple-system",
         "BlinkMacSystemFont",
         "San Francisco",
         "Roboto",
-        "Helvetica Neue",
         "sans-serif",
       ],
       body: ["GeneralSans-Variable"],

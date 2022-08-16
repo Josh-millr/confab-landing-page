@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import fsPromises from "fs/promises";
 import path from "path";
-import { NavBar } from "@components/sections/NavBar";
-import { Hero } from "@components/sections/Hero";
-import { LogoStrip } from "@components/sections/LogoStrip";
-import { Feature } from "@components/sections/Feature";
 import { Testimonial } from "@components/sections/Testimonial";
 import { NoticeBoard } from "@components/sections/NoticeBoard";
+import { CreateEvent } from "@components/sections/CreateEvent";
+import { Newsletter } from "@components/sections/Newsletter";
+import { LogoStrip } from "@components/sections/LogoStrip";
 import { MainSteps } from "@components/sections/MainSteps";
 import { StepPlan } from "@components/sections/StepPlan";
-import { Newsletter } from "@components/sections/Newsletter";
-import { CreateEvent } from "@components/sections/CreateEvent";
+import { Feature } from "@components/sections/Feature";
 import { Footer } from "@components/sections/Footer";
+import { NavBar } from "@components/sections/NavBar";
 import { ClimbingBoxLoader } from "react-spinners";
+import { Hero } from "@components/sections/Hero";
 
 export default function Home({ testimonialData, eventData }) {
   let [showSpinner, setShowSpinner] = useState(true);
