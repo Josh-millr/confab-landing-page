@@ -21,7 +21,7 @@ export const Feature = () => {
   let featureItems = [
     {
       id: 9127,
-      img: "/illustrations/Sketch-annotation-element-brush-pen-icon-eye.svg",
+      img: "/illustrations/eye-minified.svg",
       heading: "watch exclusive",
       paragraph: {
         paraStart: "Free and",
@@ -31,7 +31,7 @@ export const Feature = () => {
     },
     {
       id: 72345,
-      img: "/illustrations/Sketch-annotation-element-brush-pen-icon-smiley-love.svg",
+      img: "/illustrations/admirer-emoji-minified.svg",
       heading: "top speakers",
       paragraph: {
         paraStart: "Anyone can",
@@ -73,7 +73,7 @@ export const Feature = () => {
           className="relative hidden md:block"
         >
           <Image
-            src="/illustrations/Live-streaming-featured.svg"
+            src="/illustrations/Live-streaming-featured-minified.svg"
             alt="responsive Image of live streaming platform"
             layout="fill"
           />

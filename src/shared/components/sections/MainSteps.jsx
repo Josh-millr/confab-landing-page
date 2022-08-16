@@ -35,7 +35,7 @@ export const MainSteps = ({}) => {
         {/* Column 2 */}
         <div className="grid grid-cols-1 grid-rows-1 place-content-center gap-y-[16px] sm:grid-cols-3 sm:gap-y-[0px] sm:gap-x-[24px] lg:gap-x-[40px]">
           <ActivityCard
-            img="/illustrations/man-with-sweater.svg"
+            img="/illustrations/man-with-sweater-minified.svg"
             heading="Become a host"
             paraStart="Anyone can"
             paraEnd="and customize the number of participants."
@@ -44,7 +44,7 @@ export const MainSteps = ({}) => {
             active={firstStep}
           />
           <ActivityCard
-            img="/illustrations/woman-with-knife.svg"
+            img="/illustrations/woman-with-knife-minified.svg"
             heading="plan ahead"
             paraStart="to schedule meetings or conferences and send invites."
             paraEnd="and customize the number of participants."
@@ -53,7 +53,7 @@ export const MainSteps = ({}) => {
             active={secondStep}
           />
           <ActivityCard
-            img="/illustrations/woman-with-mobile.svg"
+            img="/illustrations/woman-with-mobile-minified.svg"
             heading="get a link, share."
             paraStart="Click"
             paraEnd="to get a link you can send to people you want to invite."

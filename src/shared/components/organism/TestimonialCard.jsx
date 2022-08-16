@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 export const TestimonialCard = (testimonialInfo) => {
-  let { title, description, name, image, jobRole, country } = testimonialInfo;
+  let { title, description, name, profileImg, jobRole, country } =
+    testimonialInfo;
 
   return (
     <div className="grid max-w-[400px] gap-y-[32px] rounded-[32px] bg-white p-[24px] sm:gap-y-[48px] lg:gap-y-[64px] lg:p-[32px]">
@@ -23,7 +24,7 @@ export const TestimonialCard = (testimonialInfo) => {
         <div className="flex gap-x-[16px]">
           <div className="relative h-[48px] w-[48px] rounded-[16px]">
             <Image
-              src="/illustrations/muslim-lady.svg"
+              src={profileImg}
               alt="Profile picture illustration of a muslim woman"
               layout="fill"
             />

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { TestimonialCard } from "@components/index";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useWindowWidth } from "@utils/useWindowWidth.js";
 import { Autoplay, FreeMode } from "swiper";
+import { useWindowWidth } from "@utils/useWindowWidth.js";
+import { TestimonialCard } from "@components/index";
 import "swiper/css";
 
 export const Testimonial = ({ data }) => {
@@ -32,7 +32,7 @@ export const Testimonial = ({ data }) => {
   let testimonialData = data.testimonials;
 
   let testimonials = testimonialData.map(
-    ({ id, quote, description, country, name, jobRole }) => (
+    ({ id, quote, description, country, name, jobRole, profileImg }) => (
       <SwiperSlide key={id}>
         <TestimonialCard
           title={quote}
@@ -40,6 +40,7 @@ export const Testimonial = ({ data }) => {
           name={name}
           jobRole={jobRole}
           country={country}
+          profileImg={profileImg}
         />
       </SwiperSlide>
     )

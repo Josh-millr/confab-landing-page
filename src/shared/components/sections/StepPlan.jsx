@@ -10,7 +10,7 @@ export const StepPlan = () => {
           highlightColor="text-opal"
           order="order-first"
           decription="[description goes in here] blorem blipsum dolor sit bamat minim mollit non deserunt ullamco lorem ipsum bolor sit amat est."
-          img="/illustrations/man-with-laptop.svg"
+          img="/images/man-with-laptop.png"
           btn="stroke"
         />
         <StepPlanCard
@@ -19,7 +19,7 @@ export const StepPlan = () => {
           highlightColor="text-mango"
           order="order-first sm:order-last"
           decription="[description goes in here] blorem blipsum dolor sit bamat minim mollit non deserunt ullamco lorem ipsum bolor sit amat est."
-          img="/illustrations/woman-scheduling-calender.svg"
+          img="/images/woman-scheduling-calender.png"
           btn="primary"
         />
         <StepPlanCard
@@ -28,7 +28,7 @@ export const StepPlan = () => {
           highlightColor="text-crayola"
           order="order-first"
           decription="[description goes in here] blorem blipsum dolor sit bamat minim mollit non deserunt ullamco lorem ipsum bolor sit amat est."
-          img="/illustrations/man-streaming.svg"
+          img="/images/man-streaming.png"
           btn="stroke"
         />
       </div>

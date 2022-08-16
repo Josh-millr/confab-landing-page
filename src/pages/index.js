@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import fsPromises from "fs/promises";
 import path from "path";
 import { NavBar } from "@components/sections/NavBar";
@@ -11,26 +12,36 @@ import { StepPlan } from "@components/sections/StepPlan";
 import { Newsletter } from "@components/sections/Newsletter";
 import { CreateEvent } from "@components/sections/CreateEvent";
 import { Footer } from "@components/sections/Footer";
+import { ClimbingBoxLoader } from "react-spinners";
 
 export default function Home({ testimonialData, eventData }) {
+  let [showSpinner, setShowSpinner] = useState(true);
+  useEffect(() => setShowSpinner(false), []);
+
   return (
-    <>
-      <header>
-        <NavBar />
-        <Hero />
-      </header>
-      <main>
-        <LogoStrip />
-        <Feature />
-        <Testimonial data={testimonialData} />
-        <NoticeBoard data={eventData} />
-        <MainSteps />
-        <StepPlan />
-        <Newsletter />
-        <CreateEvent />
-      </main>
-      <Footer />
-    </>
+    (showSpinner && (
+      <div className="bg-cloud grid h-[100vh] w-full place-content-center">
+        <ClimbingBoxLoader loading={true} size={15} color="#FB554C" />
+      </div>
+    )) || (
+      <>
+        <header>
+          <NavBar />
+          <Hero />
+        </header>
+        <main>
+          <LogoStrip />
+          <Feature />
+          <Testimonial data={testimonialData} />
+          <NoticeBoard data={eventData} />
+          <MainSteps />
+          <StepPlan />
+          <Newsletter />
+          <CreateEvent />
+        </main>
+        <Footer />
+      </>
+    )
   );
 }
 

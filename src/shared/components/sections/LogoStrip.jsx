@@ -7,7 +7,7 @@ export const LogoStrip = () => {
       <div className="grid grid-cols-3 grid-rows-2 justify-items-center gap-x-[48px] gap-y-[24px] sm:grid-cols-6 sm:grid-rows-1 md:gap-x-[64px]">
         <div>
           <Image
-            src="/illustrations/cnbc.png"
+            src="/illustrations/logo/cnbc-minified.svg"
             alt="A logo of cnbc"
             width={42}
             height={32}
@@ -15,7 +15,7 @@ export const LogoStrip = () => {
         </div>
         <div>
           <Image
-            src="/illustrations/forbes.png"
+            src="/illustrations/logo/forbes-minified.svg"
             alt="A logo of forbes"
             width={70}
             height={19}
@@ -23,7 +23,7 @@ export const LogoStrip = () => {
         </div>
         <div>
           <Image
-            src="/illustrations/fortune.png"
+            src="/illustrations/logo/fortune-minified.svg"
             alt="A logo of fortune"
             width={79}
             height={19}
@@ -31,7 +31,7 @@ export const LogoStrip = () => {
         </div>
         <div>
           <Image
-            src="/illustrations/ft.png"
+            src="/illustrations/logo/ft-minified.svg"
             alt="A logo of ft"
             width={90}
             height={28}
@@ -39,7 +39,7 @@ export const LogoStrip = () => {
         </div>
         <div>
           <Image
-            src="/illustrations/tc.png"
+            src="/illustrations/logo/tc-minified.svg"
             alt="A logo of tc"
             width={46}
             height={22}
@@ -47,7 +47,7 @@ export const LogoStrip = () => {
         </div>
         <div>
           <Image
-            src="/illustrations/wsj.png"
+            src="/illustrations/logo/wsj-minified.svg"
             alt="A logo of wsj"
             width={52}
             height={28}

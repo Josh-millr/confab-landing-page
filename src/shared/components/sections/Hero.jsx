@@ -24,7 +24,7 @@ export const Hero = ({}) => {
             </p>
           </div>
         </header>
-        <div className="h-[60%] rounded-[24px] bg-[url('/images/illustration.png')] bg-cover bg-center md:h-fit">
+        <div className="h-[60%] rounded-[24px] bg-[url('/images/cover-banner.png')] bg-cover bg-center md:h-fit">
           <div className="h-full rounded-[24px] bg-[#5CD0C545]">
             <div className="mx-pageMargin-sm grid grid-cols-1 grid-rows-1 md:mx-pageMargin-md md:grid-cols-2 md:grid-rows-2 md:py-[20px] lg:mx-pageMargin-lg">
               {/* column 1 */}

@@ -31,7 +31,7 @@ export const CreateEvent = () => {
         {/* Column 2 */}
         <div className="relative left-[-75%] h-[554px] w-[1064px] sm:left-[-25%] md:left-[-10%] lg:left-[0] lg:h-[665px] lg:w-[auto]">
           <Image
-            src="/illustrations/banner.svg"
+            src="/illustrations/banner-minified.svg"
             alt="image of many people standing"
             layout="fill"
           />
