@@ -42,7 +42,7 @@ export const Hero = ({}) => {
                   date="thu, 19 may 2022"
                   author="Pablo Stanley"
                   jobRole="Art Director & Illustrator"
-                  image="/images/profile-image.png"
+                  image="/images/profile-picture.png"
                 />
               </div>
               {/* column 3 */}
@@ -52,7 +52,7 @@ export const Hero = ({}) => {
                   icon={RiNotification3Fill}
                   type="primary"
                   size="md"
-                  image="/images/profile-image.png"
+                  image="/images/profile-picture.png"
                 />
                 <div className="flex gap-x-[8px] rounded-full bg-white py-[8px] px-[8px] font-body text-body-sm font-bold text-black">
                   <RiGroup2Fill size={24} />
